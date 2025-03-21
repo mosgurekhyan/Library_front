@@ -1,0 +1,1 @@
+export const fileInstance = import.meta.env.VITE_API_SERVER_URL

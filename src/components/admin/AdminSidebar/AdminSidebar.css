@@ -1,0 +1,40 @@
+.admin_sidebar {
+    width: 250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 15px 20px;
+    gap: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: solid 1px #02A49D;
+}
+
+.admin_sidebar_logo {
+    width: 80px;
+    margin-bottom: 55px;
+}
+
+.admin_sidebar a {
+    text-decoration: none;
+    user-select: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.admin_sidebar a:hover {
+    cursor: pointer;
+    color: #02A49D;
+}
+
+.admin_sidebar_active_color {
+    color: #02A49D !important;
+}
+
+.admin_sidebar_btn {
+    color: red;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+}

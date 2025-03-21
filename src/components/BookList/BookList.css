@@ -1,0 +1,25 @@
+.books_list {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    z-index: 300;
+    width: 100%;
+    padding: 50px 100px;
+    background: #C1D3DF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.books_list_book_img {
+    width: 120px;
+    height: 150px;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+.books_list_text {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}

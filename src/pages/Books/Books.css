@@ -1,0 +1,6 @@
+.books {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    background: #C1D3DF;
+}

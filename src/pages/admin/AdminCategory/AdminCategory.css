@@ -1,0 +1,16 @@
+.admin_categories {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.admin_category {
+    width: 200px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #02A49D;
+    font-size: 14px;
+}

@@ -1,0 +1,48 @@
+.recomended_books {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.recomended_books_title {
+    font-size: 26px;
+    color: #1d5564;
+    font-weight: 600;
+}
+
+.random_books {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.random_book {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.random_book_img {
+    height: 470px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.random_book_name {
+    text-transform: uppercase;
+    color: #0A1927;
+}
+
+.random_book:hover .random_book_name {
+    color: #1d5564;
+}

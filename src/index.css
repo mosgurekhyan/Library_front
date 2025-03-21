@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('./assets/fonts/Pragmatica-Book.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pragmatica;
+  /* user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; */
+}
+
+iframe,
+textarea,
+button,
+input {
+  border: none;
+  background: none;
+  border-radius: 0;
+  outline: none;
+}
+
+button {
+  transition: .3s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  object-fit: contain;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.display_none {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #c1d3df;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d5564;
+}
+
+:is(input, textarea)::placeholder {
+  color: #1d5564;
+}
+
+.selected {
+  background: #02A49D;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+.password_wrapper {
+  position: relative;
+}
+
+.visibility {
+  visibility: visible !important;
+}
+
+.admin_layout {
+  background: #010101;
+  display: flex;
+}
+
+.admin_page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 25px 30px 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background: #010101;
+}
+
+.admin_page_title {
+  color: #fff;
+  font-size: 26px;
+}
+
+.admin_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.admin_inp_container {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin_inp {
+  width: 100%;
+  height: 42px;
+  color: #fff;
+  padding: 0 15px;
+  border: 1px solid #02A49D;
+  border-radius: 5px;
+}
+
+.admin_btn {
+  color: #fff;
+  border: 1px solid #02A49D;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.admin_elem_container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  border: 1px solid #02A49D;
+  padding: 7px;
+}
+
+.admin_btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.admin_btns {
+  display: flex;
+  gap: 30px;
+}
+
+.admin_action_btn {
+  color: red;
+}
