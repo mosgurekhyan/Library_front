@@ -8,9 +8,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Pragmatica;
-  /* user-select: none;
+  user-select: none;
   outline: none;
-  -webkit-tap-highlight-color: transparent; */
+  -webkit-tap-highlight-color: transparent;
 }
 
 iframe,

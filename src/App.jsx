@@ -1,7 +1,6 @@
 import ROUTES from "./routes/routes"
 import PageLoader from "./components/PageLoader/PageLoader"
 import UserLayout from "./layouts/UserLayout"
-import PrivateRoute from "./hocs/PrivateRoute"
 import { USER_ROUTES } from "./constants/userRoutes"
 import getRoutes from "./utils/getRoutes"
 import { currentUser, logout, selectTokenError } from "./store/slices/auth/authSlice"
@@ -9,11 +8,11 @@ import AdminLayout from "./layouts/AdminLayout"
 import { ADMIN_ROUTES } from "./constants/adminRoutes"
 import { selectBooks } from "./store/slices/book/bookSlice"
 import { getBooks } from "./store/slices/book/bookAPI"
+import { refreshToken } from "./store/slices/auth/authAPI"
 
 import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react"
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
-import { refreshToken } from "./store/slices/auth/authAPI"
 
 const Error = lazy(() => import('./pages/Error/Error'))
 const Auth = lazy(() => import('./pages/Auth/Auth'))
@@ -45,11 +44,11 @@ function App() {
       <>
         {
           user?.role === import.meta.env.VITE_API_ADMIN_KEY &&
-          <Route path={ROUTES.ADMIN} element={<PrivateRoute><AdminLayout /></PrivateRoute>}>
+          <Route path={ROUTES.ADMIN} element={<AdminLayout />}>
             {getRoutes(ADMIN_ROUTES)}
           </Route> 
         } 
-        <Route path={ROUTES.HOME} element={<PrivateRoute><UserLayout /></PrivateRoute>}>
+        <Route path={ROUTES.HOME} element={<UserLayout />}>
           {getRoutes(USER_ROUTES)}
         </Route> 
         <Route path={ROUTES.AUTH} element={<Suspense fallback={<PageLoader />}><Auth /></Suspense>}/>

@@ -1,4 +1,3 @@
-import ROUTES from "../../../routes/routes"
 import axiosInstance from "../../../api/axios"
 import { addCategory, removeCategory, setCategories, setCategoriesWithsubcategories, updateCategoryInStore } from "./categorySlice"
 
@@ -76,7 +75,6 @@ export const getCategoriesWithsubcategories = createAsyncThunk(
   async (_, { rejectWithValue, dispatch }) => {
     try {
       const res = await axiosInstance.get('category/with-subcategories')
-      console.log('res',res)
       dispatch(setCategoriesWithsubcategories(res.data))
     } catch (err) {
       console.log('Error:', err)

@@ -68,7 +68,7 @@ function Navbar() {
             open &&
             <div className='nav_options'>
               <button onClick={() => { navigate(ROUTES.PROFILE), setOpen(false) }} className='nav_option'>profile</button>
-              <button onClick={() => { dispatch(logout()), setOpen(false), navigate(ROUTES.HOME) }} className='nav_option'>logout</button>
+              <button onClick={() => { dispatch(logout()), setOpen(false), navigate(ROUTES.AUTH) }} className='nav_option'>logout</button>
             </div>
           }
         </div> 
