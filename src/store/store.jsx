@@ -19,7 +19,7 @@ const rootReducer = combineReducers({
 const persistConfig = { 
   key: 'library', 
   storage,
-  blacklist: ['book', 'subcategory']
+  blacklist: ['book', 'subcategory', 'category']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
